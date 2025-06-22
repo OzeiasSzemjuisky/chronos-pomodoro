@@ -1,3 +1,8 @@
+import "./assets/styles/theme.css"
+import "./assets/styles/global.css"
+
+
+
 function App( ) { 
     console.log("ola corninhos");
 
