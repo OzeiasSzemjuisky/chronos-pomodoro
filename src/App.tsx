@@ -1,15 +1,15 @@
+import { Heading } from "./components/Heading";
+
 import "./assets/styles/theme.css"
 import "./assets/styles/global.css"
 
 
 
-function App( ) { 
+export function App( ) { 
     console.log("ola corninhos");
 
     return (<>
-        <h1>ola mundo</h1>
-        <p>parafrago teste</p>; 
-    </>)
+        <Heading attr={1234} attr2="String">ola mundo</Heading>
+        <p>parafrago teste</p>
+    </>);
 }
-
-export {App};

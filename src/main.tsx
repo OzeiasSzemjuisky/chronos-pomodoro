@@ -6,9 +6,5 @@ createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <App />
   </StrictMode>,
-<<<<<<< HEAD
 )
 //comenterio test, outro teste nome
-=======
-)
->>>>>>> refs/remotes/origin/main
