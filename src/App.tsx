@@ -6,10 +6,20 @@ import "./assets/styles/global.css"
 
 
 export function App( ) { 
-    console.log("ola corninhos");
 
-    return (<>
-        <Heading attr={1234} attr2="String">ola mundo</Heading>
-        <p>parafrago teste</p>
-    </>);
+    return (
+        <>
+            <Heading>
+             ola mundo
+        
+            </Heading>
+
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Magni enim maiores necessitatibus,
+                quaerat atque, fugiat obcaecati odio illum provident tempora, mollitia
+                eius cum cumque. Sequi porro rerum praesentium ex iste?
+            </p>
+        </>
+    );
 }
