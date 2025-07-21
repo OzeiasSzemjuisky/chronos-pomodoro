@@ -1,25 +1,25 @@
-import { Heading } from "./components/Heading";
+import { Heading } from './components/Heading';
+import { Container} from './components/Container'
 
 import "./assets/styles/theme.css"
 import "./assets/styles/global.css"
 
 
 
-export function App( ) { 
+export function App( ) { return (
 
-    return (
-        <>
-            <Heading>
-             ola mundo
-        
-            </Heading>
+    <>
+        <Container>
+            <section>LOGO</section>
+        </Container>
+
+        <Container>
+            <section>
+                menu
+            </section>
+        </Container>
+    </>
+)
 
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Magni enim maiores necessitatibus,
-                quaerat atque, fugiat obcaecati odio illum provident tempora, mollitia
-                eius cum cumque. Sequi porro rerum praesentium ex iste?
-            </p>
-        </>
-    );
 }

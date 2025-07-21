@@ -1,7 +1,7 @@
 import styles from '../components/Heading.module.css';
 
 type HeadingProps = {
-    children: string;
+    children: React.ReactNode;
     
 };
 
