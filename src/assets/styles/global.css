@@ -17,16 +17,3 @@ body {
     color:var(--text-default);
 }
 
-.container-fuild{
-    max-width: auto ;
-}
-.container {
-    max-width: 98rem;
-    background-color: red;
-    margin: 0 auto
-}
-
-.content {
-    margin:3.2rem;
-    
-}

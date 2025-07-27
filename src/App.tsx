@@ -1,25 +1,25 @@
-import { Heading } from './components/Heading';
-import { Container} from './components/Container'
+import { Container } from "./components/Container";
+import { Menu } from "./components/Menu";
+import { Logo } from "./components/Logo";
+import { CountDown } from "./components/CountDown";
 
-import "./assets/styles/theme.css"
-import "./assets/styles/global.css"
+import "./assets/styles/theme.css";
+import "./assets/styles/global.css";
 
-
-
-export function App( ) { return (
-
+export function App() {
+  return (
     <>
-        <Container>
-            <section>LOGO</section>
-        </Container>
+      <Container>
+        <Logo />
+      </Container>
 
-        <Container>
-            <section>
-                menu
-            </section>
-        </Container>
+      <Container>
+        <Menu />
+      </Container>
+
+      <Container>
+        <CountDown />
+      </Container>
     </>
-)
-
-
+  );
 }

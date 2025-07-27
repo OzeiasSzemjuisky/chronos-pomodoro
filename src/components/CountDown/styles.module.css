@@ -1,0 +1,6 @@
+.containerCD {
+  font-size: clamp(8rem, 30%, 16rem);
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.3rem;
+}
