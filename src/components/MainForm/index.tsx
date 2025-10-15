@@ -5,8 +5,9 @@ import { Cycles } from "../Cycles";
 import { DefaultButton } from "../DefaultButtom";
 
 import { DefaultInput } from "../DefaultInput";
+import type { HomeProps } from "../../pages/Home";
 
-export function MainForm() {
+export function MainForm({ state }: HomeProps) {
   return (
     <form className="form" action="">
       <div className="formRow">
@@ -19,7 +20,7 @@ export function MainForm() {
       </div>
 
       <div className="formRow">
-        <p>Lorem ipsum dolor sit amet.</p>
+        <p>O proximo dencaso em {state.config.workTime}Min</p>
       </div>
 
       <div className="formRow">
