@@ -5,22 +5,8 @@ import { DefaultInput } from "../DefaultInput";
 import { useTaskContext } from "../../contexts/TaskContext/useTaskContext";
 
 export function MainForm() {
-  const { setState } = useTaskContext();
-
-  function handleClick() {
-    setState((prevState) => {
-      return {
-        ...prevState,
-        formattedSecondsRemaining: "21:00",
-      };
-    });
-  }
-
   return (
     <form className="form" action="">
-      <button onClick={handleClick} type="button">
-        Clicar
-      </button>
       <div className="formRow">
         <DefaultInput
           labelText="task"
