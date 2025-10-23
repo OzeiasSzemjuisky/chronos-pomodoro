@@ -1,15 +1,26 @@
 import { PlayCircleIcon } from "lucide-react";
-
 import { Cycles } from "../Cycles";
-
 import { DefaultButton } from "../DefaultButtom";
-
 import { DefaultInput } from "../DefaultInput";
-import type { HomeProps } from "../../pages/Home";
+import { useTaskContext } from "../../contexts/TaskContext";
 
-export function MainForm({ state }: HomeProps) {
+export function MainForm() {
+  const { setState } = useTaskContext();
+
+  function handleClick() {
+    setState((prevState) => {
+      return {
+        ...prevState,
+        formattedSecondsRemaining: "21:00",
+      };
+    });
+  }
+
   return (
     <form className="form" action="">
+      <button onClick={handleClick} type="button">
+        Clicar
+      </button>
       <div className="formRow">
         <DefaultInput
           labelText="task"
@@ -20,7 +31,7 @@ export function MainForm({ state }: HomeProps) {
       </div>
 
       <div className="formRow">
-        <p>O proximo dencaso em {state.config.workTime}Min</p>
+        <p>O proximo dencaso em 25 Min</p>
       </div>
 
       <div className="formRow">
